@@ -73,7 +73,8 @@ h2 {
     line-height: 100%;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin-block-end: 24px;
 }
 
@@ -81,23 +82,21 @@ section p:last-child {
     margin-block-end: 24px;
 }
 
-
-ul,
-ol {
+ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    padding-inline-start: 8px;
 }
 
 li {
-    line-height: 150%;
     position: relative;
     padding-inline-start: 40px;
 }
 
 section ul li::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 40px;
     height: 24px;
@@ -106,7 +105,6 @@ section ul li::before {
     top: 50%;
     transform: translateY(-50%);
     background-repeat: no-repeat;
-
 }
 
 section:first-of-type ul li::before {
