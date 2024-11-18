@@ -23,6 +23,20 @@
     font-weight: 600;
     font-style: normal;
 }
+
+*,
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #f3e5d7;
     padding-block-start: 128px;
@@ -41,11 +55,15 @@ body {
     color: #5f564d;
     font-size: 16px;
     line-height: 150%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
 }
 
 h1 {
     font-size: 40px;
-    color: #312E2C;
+    color: #312e2c;
     line-height: 100%;
 }
 
@@ -55,13 +73,28 @@ h2 {
     line-height: 100%;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
+hr {
+    border: 1px solid #e3ddd7;
+}
+
 section:first-of-type {
     padding: 24px;
     border-radius: 12px;
-    background-color: #FFF7FB;
+    background-color: #fff7fb;
 }
 
 section:first-of-type h2 {
     font-size: 20px;
-    color: #7A284E;
+    color: #7a284e;
+}
+
+section span {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
 }
