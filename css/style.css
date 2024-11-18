@@ -1,8 +1,32 @@
-body {
-    background-color: #F3E5D7;
-    padding-block-start: 128px;
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.outfit-regular {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit-bold {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.outfit-semibold {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    background-color: #f3e5d7;
+    padding-block-start: 128px;
+}
 
 .container {
     max-width: 656px;
@@ -10,5 +34,24 @@ body {
     background-color: #fff;
     border-radius: 24px;
     padding: 40px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #5f564d;
+    font-size: 16px;
 }
 
+h1 {
+    font-size: 40px;
+    color: #312E2C;
+}
+
+h2 {
+    color: #854632;
+    font-size: 28px;
+}
+
+section:first-of-type h2 {
+    font-size: 20px;
+}
