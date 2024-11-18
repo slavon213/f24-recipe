@@ -29,9 +29,6 @@ body,
 h1,
 h2,
 p,
-ul,
-ol,
-li,
 hr {
     margin: 0;
     padding: 0;
@@ -56,9 +53,12 @@ body {
     font-size: 16px;
     line-height: 150%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 32px;
+}
+
+img {
+    margin-block-end: 8px;
 }
 
 h1 {
@@ -73,9 +73,25 @@ h2 {
     line-height: 100%;
 }
 
+h1, h2 {
+    margin-block-end: 24px;
+}
+
+section p:last-child {
+    margin-block-end: 24px;
+}
+
+
 ul,
 ol {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+li {
+    line-height: 150%;
 }
 
 hr {
@@ -91,6 +107,7 @@ section:first-of-type {
 section:first-of-type h2 {
     font-size: 20px;
     color: #7a284e;
+    margin-block-end: 16px;
 }
 
 section span {
