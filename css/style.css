@@ -92,6 +92,33 @@ ol {
 
 li {
     line-height: 150%;
+    position: relative;
+    padding-inline-start: 40px;
+}
+
+section ul li::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+
+}
+
+section:first-of-type ul li::before {
+    background-image: url(../image/marker-time.svg);
+}
+
+section:nth-of-type(2) ul li::before {
+    background-image: url(../image/marker-egg-coocked.svg);
+}
+
+section:nth-of-type(3) ul li::before {
+    background-image: url(../image/marker-time.svg);
 }
 
 hr {
